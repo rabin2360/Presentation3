@@ -14,7 +14,6 @@ function draw() {
 	
   //background(255);
   //rect(50,50,75,100);
-  ellipse(x, height/2, 20, 20);
-  x = x+1;
+  ellipse(50, 50, 20, 20);
 }
 </script>
