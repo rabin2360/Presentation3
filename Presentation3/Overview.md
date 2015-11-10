@@ -52,17 +52,16 @@ The p5.js also allows the user to work with the HTML5 Canvas functionality. The 
 
 ```
 function setup() {
-  drawingContext.shadowOffsetX = 5;
-  drawingContext.shadowOffsetY = -5;
-  drawingContext.shadowBlur = 10;
-  drawingContext.shadowColor = "black";
+  createCanvas(640, 480);
   background(200);
-  ellipse(width/2, height/2, 50, 50);
+  drawingContext.fillStyle = "red";
+  drawingContext.strokeStyle = "blue";
+  drawingContext.fillRect(width/2, height/2, 55, 55);
+  drawingContext.strokeRect(width/2, height/2, 55, 55);
 }
 ```
 
-The functions like `shadowOffsetX`, `shadowOffsetY`, `shadowBlur`, `shadowColor`, etc. are HTML5 canvas functionality. They are working in conjunction with the functionality provided by 
-p5.js. The output of the code above looks like below:
+The functions like `fillStyle`, `fillRect`, `strokeStyle`, `strokeRect`, etc. are HTML5 canvas functionality. They are working in conjunction with the functionality provided by p5.js to render an image of a rectangle that is red in color with blue borders. The output of the code above looks like below:
 ![Picture](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/DrawContextExample.png)
 
 ###p5.js: Understanding `draw()` function 
