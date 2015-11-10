@@ -52,12 +52,13 @@ In general, we think that p5.js is a better choice and will continue to get bett
 ## D3.js
 
 [D3.js](http://d3js.org) (Data-Driven Documents) is a Javascript Library for producing dynamic, interactive data visualizations. D3.js is minimal focusing on the challenge of manipulating documents based on data and making it as simple as possible to bind data to the DOM and transform it on the fly. D3.js contains the following principles:
-* Selections:
-* Transformation: Unlike p5.js 
-* Transitions:
-* Data-binding:
-* Enter and Exit:
+* Selections: Similar to jQuery, the programmer can quickly operate on broad or specific parts of the DOM called "Nodes."
+* Transformation: Unlike p5.js, D3.js does not introduce a new visual representation, but rather utilizes web standards (HTML, SVG, and CSS).
+* Transitions: D3.js easily extends transformations to animated transitions of representations of data for example gradually fading in a page color or staggering the introduction of new data points in a graph.
+* Data-binding: Elements from loaded datasheets are associated with SVG files that have various controllable properties and behaviors.
 
-One major difference between D3.js and p5.js is in their philosophies: P5.js is meant to be accessible to people new to coding while most of the language on the [D3.js website](http://d3js.org) is only understandable to relatively experienced web developers.
+One major difference between D3.js and p5.js is in their philosophies: P5.js is meant to be accessible to people new to coding while most of the language on the [D3.js website](http://d3js.org) is only understandable to relatively experienced web developers. D3.js is probably the best option when creating high performing data visualizations as it is much smaller and focused than p5.js. However, p5.js consists of many more features and is more worthwhile for new programmers to learn.
 
-## EaselJS
+## CreateJS
+
+[CreateJS](http://www.createjs.com) is a suite of open-source libraries that contain much of the same functionality as p5.js  and utilize HTML5 to create interactive content. Libraries such as EaselJS (graphics and interactions), TweenJS (tweening) SoundJS (audio playback), and PreloadJS (preloading assets) can all be used together or mixed and matched. The API for CreateJS is very similar to Flash. CreateJS and p5.js have similar features, so it is hard to pick an immediate winner, but in the future as Flash becomes less relevent, p5.js may align more with developers' skillsets. 
