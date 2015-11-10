@@ -47,4 +47,3 @@ function setup() {
   canvas.parent('ContainerToDisplayCanvas');
 }
 ```
-
