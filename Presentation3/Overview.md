@@ -63,7 +63,7 @@ function setup() {
 
 The functions like `shadowOffsetX`, `shadowOffsetY`, `shadowBlur`, `shadowColor`, etc. are HTML5 canvas functionality. They are working in conjunction with the functionality provided by 
 p5.js. The output of the code above looks like below:
-![Picture](https://github.com/rabin2360/Presentation3/tree/master/Presentation3/DrawContextExample.png)
+![Picture](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/DrawContextExample.png)
 
 ###p5.js: Understanding `draw()` function 
 In the following code, the `draw()` function is called on a loop and gives the impression of an animation. For the following code,
