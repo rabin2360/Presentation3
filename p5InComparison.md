@@ -1,4 +1,4 @@
-# P5 Compared to Other Similar Frameworks
+# p5.js Compared to Similar Frameworks
 
 ## Processing
 
