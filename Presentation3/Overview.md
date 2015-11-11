@@ -67,13 +67,38 @@ The functions like `fillStyle`, `fillRect`, `strokeStyle`, `strokeRect`, etc. ar
 ###p5.js: Understanding `draw()` function 
 In the following code, the `draw()` function is called on a loop and gives the impression of an animation. For the following code,
 ```
+var x = 0;
+var y = 0;
+
+function setup() {
+  createCanvas(640, 480);
+  y = height/2;
+}
+
 function draw() {
-  ellipse(x, height/2, 20, 20);
-  x = x+1;
+  background(200);
+	y = y + random(-5, 5);
+	
+  if(x> width)
+  {
+	x = 0;
+  }
+  
+  if(y > height || y < 0)
+  {
+	  y = 0;
+  }
+  
+   noStroke();
+   stroke(0);
+   fill(51);
+   ellipse(x, y, 30, 30);
+   x = x+1;
 }
 ```
 
-the x-coordinate of the ellipse is constantly updated in a loop giving the impression that the ellipse is moving along the horizontal axis in a straight line. Usually, the setup for the animation being
-performed is done in the `setup()` function and the actual animation is implemented in the `draw()` function.
+the x-coordinate of the ellipse is constantly updated in a loop giving the impression that the ellipse is moving along the horizontal axis. However, the y-axis value of the ellipse is randomly incremented or decremented by a value from the range (-5, 5).
+The setup gives an impression that the ellipse is moving in the horizontal direction and while doing so is bobbing up and down. All of this is achieved using the `draw()` method in p5.js. The above code results in an animation like below:
+![Animated GIF](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/Animation.png)
 
 
