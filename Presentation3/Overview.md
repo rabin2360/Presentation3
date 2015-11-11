@@ -99,6 +99,6 @@ function draw() {
 
 the x-coordinate of the ellipse is constantly updated in a loop giving the impression that the ellipse is moving along the horizontal axis. However, the y-axis value of the ellipse is randomly incremented or decremented by a value from the range (-5, 5).
 The setup gives an impression that the ellipse is moving in the horizontal direction and while doing so is bobbing up and down. All of this is achieved using the `draw()` method in p5.js. The above code results in an animation like below:
-![Animated GIF](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/Animation.png)
+![Animated GIF](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/Animation.gif)
 
 
