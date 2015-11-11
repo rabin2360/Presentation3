@@ -103,3 +103,66 @@ The setup gives an impression that the ellipse is moving in the horizontal direc
 ![Animated GIF](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/Animation.gif)
 
 
+###p5.js: Understanding mouse and touch interaction
+In p5.js, a list of following methods are included to handle things like mouse and touch interaction with the user. This allow the program to respond to the interaction with the end user using mouse and touch pads. The following are some of the mouse and touch interactions
+supported by p5.js
+	* Mouse
+		* mouseX: the system variable that tells the x-coordinate in relation to the (0,0) on the canvas.
+		* mouseY:  the system variable that tells the y-coordinate in relation to the (0,0) on the canvas.
+		* mouseIsPressed: the boolean system variable determines if the mouse is pressed or not.
+		* mousePressed(): the function that gets called when the mouse button is pressed.
+	* Touch
+		* touchMoved(): the function is called everytime a touch move is registered.
+		* touchStarted(): the function is called once after every time a touch is registered.
+		* touchEnded(): the function is called every time a touch ends.
+
+
+Following is the code that shows the use of `mousePressed()` function. In the following code, everytime the mouse is pressed within the canvas, that becomes the starting point for the drifting bubble. Also, everytime a mouse press is 
+registered, the color of the bubble changes.
+```
+var x = 0;
+var y = 0;
+var r, g, b;
+
+function setup() {
+  createCanvas(640, 480);
+  y = height/2;
+  r = random(255);
+  g = random(255);
+  b = random(255);
+}
+
+function draw() {
+  background(200);
+	y = y + random(-5, 5);
+	
+  if(x> width)
+  {
+	x = 0;
+  }
+  
+  if(y > height || y < 0)
+  {
+	  y = 0;
+  }
+  
+   stroke(r, g, b);
+   fill(r, g, b);
+   ellipse(x, y, 30, 30);
+   x = x+2;
+   
+}
+
+function mousePressed()
+{
+	x = mouseX;
+	y = mouseY;
+	
+	r = random(255);
+	g = random(255);
+	b = random(255);
+}
+```
+
+On executing the code, the following behavior is observed
+![Mouse Clicks](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/MouseClicks.gif)
