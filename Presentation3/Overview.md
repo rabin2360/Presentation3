@@ -262,7 +262,7 @@ In the gif above, it can be seen that regardless of which angle the cone turns t
 
 **Directional Light**: The function `directionalLight()` creates a directional light with color. As the name suggests, the light is shining from a certain direction at the object at display. The syntax for it is
 
-	`directionalLight(red, [optional: blue], [optional: green], [optional: opacity], x_axis, [optional: y_axis], [optional: z_axis])`
+```directionalLight(red, [optional: blue], [optional: green], [optional: opacity], x_axis, [optional: y_axis], [optional: z_axis])```
 
 In the following code, blue light is used for directional lightning. Also, the cursor is the source of the directional light and as the position of the cursor changes, the direction of the light source also changes. 
 ```
@@ -286,7 +286,7 @@ On running the code above, the following behavior is observed:
 
 **Point Light**: The functoin `pointLight()` creates a point light with color. The syntax for it is
 
-	`pointLight(red, [optional: blue], [optional: green], [optional: opacity], x_axis, [optional: y_axis], [optional: z_axis])`
+```pointLight(red, [optional: blue], [optional: green], [optional: opacity], x_axis, [optional: y_axis], [optional: z_axis])```
 
 In the following code, red light is used for point lightning. The cursor is the source of the point light like the previous example. 
 ```
