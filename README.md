@@ -15,4 +15,4 @@ p5.js (along with other software developed by the Processing Foundation) enables
 
 <img src ="https://github.com/rabin2360/Presentation3/blob/master/Presentation3/p5js.png" widht = "100" height = "100">
 
-[Next Slide](https://github.com/rabin2360/Presentation3/blob/master/GettingStarted.md)
+[Next](https://github.com/rabin2360/Presentation3/blob/master/GettingStarted.md)
