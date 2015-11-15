@@ -139,13 +139,43 @@ function mouseClicked() {
 5. Then, use ```fft.waveform()``` to generate an array of amplitude levels over brief moments in time and iterate through the array connecting each point in black. In this case, the x-axis represents time and the y-axis represents amplitude.
 6. Change the frequency of the tone based on the x-position of the mouse and change the amplitude based on the y-position of the mouse.
 7. Finally, the function ```mouseClicked()``` will swap the oscillating waveform between sine waves and triangle waves.
+8. You'll notice that as volume increases, the waveform increases in size, and as the frequency increases, it oscillates faster and faster. More interestingly, You'll notice that sine tones only produce one frequency, its root, while triangle waves produce lots of quieter overtone frequencies dispersed at a regular interval.
 
-You'll notice that as volume increases, the waveform increases in size, and as the frequency increases, it oscillates faster and faster. More interestingly, You'll notice that sine tones only produce one frequency, its root, while triangle waves produce lots of quieter overtone frequencies dispersed at a regular interval.
+For more powerful tools in writing and visualizing music, there is the external library [p5.gibber](http://charlie-roberts.com/gibber/p5-gibber/).
 
 ## p5.play
 
-## p5.particle
+[p5.play](http://p5play.molleindustria.org) is a library that makes it possible to build 2D games through extending p5.js with a Sprite class and other features like animation support, basic collision detection and resolution, helpers for mouse and keyboard interactions, and a virtual camera. p5.play is not meant to be the most powerful game-making framework out there. From its official website: "p5.play is built for accessibility and simplicity, not performance. It is designed to be understood and possibly modified by intermediate programmers. It is not a box2D-based physics engine, it doesn't use events, nor supports 3D."
+
+The following brief example creates sprites and positions them based on the mouse position.
+
+```
+var box1, box2;
+
+function setup() {
+  createCanvas(800,400);
+  box1 = createSprite(600, 200, 50, 50);
+  box2 = createSprite(200, 200, 25, 25);
+}
+
+function draw() {
+  background(255,255,255);  
+  box1.attractionPoint(.2, mouseX, mouseY);
+  box2.attractionPoint(.4, mouseX, mouseY);
+  box1.maxSpeed = 5;
+  box2.maxSpeed = 6;
+  
+  drawSprites();
+}
+```
+
+1. Name two sprites ```box1``` and ```box2```.
+2. In the ```setup()``` function, create two sprites (represented as boxes with a random color) with different sizes and at different places on the canvas. If the developer has sprite image files, he/she can overlay these over each box as animations with the ```addAnimation()``` function.
+3. Within each frame of animation, use the ```attractionPoint()``` function to increase the force of the box in the direction towards the mouse pointer. Limiting the box's ```maxSpeed``` will prevent this force from constantly increasing.
+4. Finally, draw the sprites!
 
 ## p5.bots
+
+Other external libraries include p5.particle which adds particle support to p5.js, and p5.speech which provides an API to Web Speech and Speech Recognition APIs. p5.js has a vibrant community so this collection of external libraries is likely to expand over the coming years.
 
 [Previous](https://github.com/rabin2360/Presentation3/blob/master/WebGL.md) [Next](https://github.com/rabin2360/Presentation3/blob/master/p5InComparison.md)
