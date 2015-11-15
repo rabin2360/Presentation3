@@ -167,4 +167,4 @@ function mousePressed()
 On executing the code, the following behavior is observed
 ![Mouse Clicks](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/MouseClicks.gif)
 
-[Previous](https://github.com/rabin2360/Presentation3/edit/master/GettingStarted.md)   [Next](https://github.com/rabin2360/Presentation3/edit/master/WebGL.md)
+[Previous](https://github.com/rabin2360/Presentation3/blob/master/GettingStarted.md)   [Next](https://github.com/rabin2360/Presentation3/blob/master/WebGL.md)
