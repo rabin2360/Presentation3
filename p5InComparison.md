@@ -32,6 +32,8 @@ function drawCircle(x, y, radius) {
 }
 ```
 
+![Fractal Image](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/ProcessingExample.png)
+
 ## Processing.js
 
 [Processing.js]((http://processingjs.org) ) is a port of the Processing Language, [and a quick look at its GitHub page](https://github.com/processing-js/processing-js/) reveals that its most recent version was released in March 2015. Unlike p5.js, Processing.js is not developed by the Processing Foundation. Also unlike p5.js which is meant to be a full version of Processing in Javascript, it is actually a converter that interprets Processing code into JavaScript. So, if you already know Processing, you already know Processing.js.
