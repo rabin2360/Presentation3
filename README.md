@@ -1,6 +1,6 @@
 # p5.js
 
-### Overview
+### Introduction
 
 p5.js is a Javascript library that allows any webpage to act as a canvas for drawing dynamic, interactive animations. p5.js was [designed to contain the following core ideas:](http://hello.p5js.org)
 * Programming for the Arts
