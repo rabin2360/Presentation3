@@ -140,4 +140,4 @@ function draw(){
 On running the code above, the following behavior is observed:
 ![Point light sphere](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/PointLightSphere.gif)
 
-[Previous](https://github.com/rabin2360/Presentation3/edit/master/Overview.md)
+[Previous](https://github.com/rabin2360/Presentation3/blob/master/Overview.md)
