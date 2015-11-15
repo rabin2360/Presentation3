@@ -174,8 +174,40 @@ function draw() {
 3. Within each frame of animation, use the ```attractionPoint()``` function to increase the force of the box in the direction towards the mouse pointer. Limiting the box's ```maxSpeed``` will prevent this force from constantly increasing.
 4. Finally, draw the sprites!
 
-## p5.bots
+## grafica.js
 
-Other external libraries include p5.particle which adds particle support to p5.js, and p5.speech which provides an API to Web Speech and Speech Recognition APIs. p5.js has a vibrant community so this collection of external libraries is likely to expand over the coming years.
+[graphica.js](https://github.com/jagracar/grafica.js) is a port of the graphica Processing library that allows the developer to create 2d plots that update in realtime. Some of graphica.js('s) features include the creation of plots with multiple layers, zooming and panning to enable closer inspection of certain points within the data, and high customizability including the ablity to add images to points.
+
+The following brief example creates a plot, names the axes, and overlays points. You'll notice that the y-axis automatically creates tic values and a range based on the data provided.
+
+```
+var defaultPlotSketch = function(p) {
+	p.setup = function() {
+		var canvas = p.createCanvas(500, 350);
+		p.background(150);
+
+		// Prepare the points for the plot
+		var points = [];
+		var initial = 4.0;
+
+		for (var i = 0; i < 10; i++) {
+			points[i] = new GPoint(i + 1, initial - (i*.4));
+		}
+
+		var plot = new GPlot(p);
+		plot.setPos(25, 25);
+
+		plot.setPoints(points);
+		plot.getXAxis().setAxisLabelText("Semester");
+		plot.getYAxis().setAxisLabelText("GPA");
+		plot.setTitleText("My GPA");
+
+		plot.defaultDraw();
+		p.noLoop();
+	};
+};
+```
+
+Other external libraries include p5.particle which adds particle support to p5.js,  p5.speech which provides an API to Web Speech and Speech Recognition APIs, and p5.bots, a really cool tool enabling web apps to communicate with an Arduino microcontroller. p5.js has a vibrant community so this collection of external libraries is likely to expand over the coming years.
 
 [Previous](https://github.com/rabin2360/Presentation3/blob/master/WebGL.md) [Next](https://github.com/rabin2360/Presentation3/blob/master/p5InComparison.md)
