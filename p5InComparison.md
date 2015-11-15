@@ -62,3 +62,5 @@ One major difference between D3.js and p5.js is in their philosophies: P5.js is 
 ## CreateJS
 
 [CreateJS](http://www.createjs.com) is a suite of open-source libraries that contain much of the same functionality as p5.js  and utilize HTML5 to create interactive content. Libraries such as EaselJS (graphics and interactions), TweenJS (tweening) SoundJS (audio playback), and PreloadJS (preloading assets) can all be used together or mixed and matched. The API for CreateJS is very similar to Flash. CreateJS and p5.js have similar features, so it is hard to pick an immediate winner, but in the future as Flash becomes less relevent, p5.js may align more with developers' skillsets. 
+
+[Previous](https://github.com/rabin2360/Presentation3/blob/master/p5Addons.md) [Next](https://github.com/rabin2360/Presentation3/blob/master/Conclusion.md)
