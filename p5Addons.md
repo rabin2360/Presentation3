@@ -67,7 +67,9 @@ function addVal() {
 4. If the fill level is equal to 255, remove all elements within the DOM including all added divs and the slider itself.
 5. Otherwise, use the fill level to color an eclipse drawn in the canvas.
 
-[p5.js have written a pretty substantial tutorial on using this add-on.](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)
+![Example GIF of using p5.dom](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/p5Dom.gif)
+
+[The developers of p5.js have written a pretty substantial tutorial on using this add-on.](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)
 
 ## p5.sound
 
@@ -141,6 +143,8 @@ function mouseClicked() {
 7. Finally, the function ```mouseClicked()``` will swap the oscillating waveform between sine waves and triangle waves.
 8. You'll notice that as volume increases, the waveform increases in size, and as the frequency increases, it oscillates faster and faster. More interestingly, You'll notice that sine tones only produce one frequency, its root, while triangle waves produce lots of quieter overtone frequencies dispersed at a regular interval.
 
+![p5.sound example gif](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/p5SoundExample.gif)
+
 For more powerful tools in writing and visualizing music, there is the external library [p5.gibber](http://charlie-roberts.com/gibber/p5-gibber/).
 
 ## p5.play
@@ -174,11 +178,13 @@ function draw() {
 3. Within each frame of animation, use the ```attractionPoint()``` function to increase the force of the box in the direction towards the mouse pointer. Limiting the box's ```maxSpeed``` will prevent this force from constantly increasing.
 4. Finally, draw the sprites!
 
+![p5.play example gif](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/p5PlayEx.gif)
+
 ## grafica.js
 
 [graphica.js](https://github.com/jagracar/grafica.js) is a port of the graphica Processing library that allows the developer to create 2d plots that update in realtime. Some of graphica.js('s) features include the creation of plots with multiple layers, zooming and panning to enable closer inspection of certain points within the data, and high customizability including the ablity to add images to points.
 
-The following brief example creates a plot, names the axes, and overlays points. You'll notice that the y-axis automatically creates tic values and a range based on the data provided.
+The following brief example creates a plot, names the axes, and overlays points. You'll notice that the y-axis automatically creates tick mark values and a range based on the data provided.
 
 ```
 var defaultPlotSketch = function(p) {
@@ -208,6 +214,8 @@ var defaultPlotSketch = function(p) {
 };
 ```
 
-Other external libraries include p5.particle which adds particle support to p5.js,  p5.speech which provides an API to Web Speech and Speech Recognition APIs, and p5.bots, a really cool tool enabling web apps to communicate with an Arduino microcontroller. p5.js has a vibrant community so this collection of external libraries is likely to expand over the coming years.
+![Example graph built with grafica.js](https://github.com/rabin2360/Presentation3/blob/master/Presentation3/graficaExample.png)
+
+Other external libraries include [p5.particle](https://github.com/bobcgausa/cook-js) which adds particle support to p5.js, [p5.speech](http://abilitylab.nyu.edu/p5.js-speech/) which provides quick access to Web Speech and Speech Recognition APIs, and [p5.bots](https://github.com/sarahgp/p5bots), a really neat tool enabling web apps to communicate with an Arduino microcontroller. p5.js has a vibrant community so this collection of external libraries is likely to expand over the coming years.
 
 [Previous](https://github.com/rabin2360/Presentation3/blob/master/WebGL.md) [Next](https://github.com/rabin2360/Presentation3/blob/master/p5InComparison.md)
