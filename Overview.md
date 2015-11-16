@@ -5,6 +5,7 @@ There are two main functions that p5 uses when an application is started:
 
 `setup()`: The code in the `setup` function runs once. Typically, the code written in the `setup` block is used for initialization. It can also be used to create a progrom that does
 not need looping repeatedly.
+
 `draw()`: The draw block for the code runs in a constant loop. It is typically used for animation as it continues to run the block of code to give an impression that the code view is
 dynamic and constantly changing.
 
